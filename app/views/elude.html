@@ -1,0 +1,34 @@
+<aside ng-controller="EludeCtrl">
+  <h3>{{ juego }}</h3>
+  <hr>
+  <h6>Controles del juego</h6>
+  <img id="contrles" src="images/wasd.png"/>
+  <img id="contrles" src="images/arrows.png"/>
+  <br>
+  <form>
+    <input type="text" name="jugador" ng-model="jugador">
+    <input type="text" name="puntaje" id="puntaje" ng-model="puntos"><br>
+    <button class="btn btn-success">iniciar</button>
+    <button ng-click="add()" class="btn btn-success">Guardar</button>
+  </form>
+</aside>
+<canvas id="lienzo" width="700" height="500">
+	Tu navegador no es compatible
+</canvas>
+<audio id="brisa" controls>
+	<source src="sonidos/brisa.ogg" type="audio/ogg">
+	<source src="sonidos/brisa.mp3" type="audio/mpeg">
+	Tu navegador no es compatible
+</audio>
+<audio id="explode">
+	<source src="sonidos/explode.ogg" type="audio/ogg">
+	<source src="sonidos/explode.mp3" type="audio/mpeg">
+	Tu navegador no es compatible
+</audio>
+
+<img id="ship" src="images/ship.png"/><br>
+<img id="asteroid" src="images/asteroid.png"/><br>
+<img id="explosion" src="images/explosion.png"/><br>
+
+<link rel="stylesheet" type="text/css" href="styles/estilos.css" media="screen">
+<script src="scripts/script.js" language="JavaScript1.2"></script>
